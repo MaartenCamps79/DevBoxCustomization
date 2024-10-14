@@ -1,0 +1,24 @@
+# From https://github.com/microsoft/devcenter-examples
+$schema: 1.0
+tasks:
+  - name: winget
+    parameters:
+      package: Microsoft.VisualStudioCode
+      runAsUser: true
+  - name: winget
+    parameters:
+      package: Notepad++.Notepad++
+      runAsUser: true
+  - name: winget
+    parameters:
+      package: Git.Git
+      runAsUser: true
+  - name: winget
+    parameters:
+      package: OpenJS.NodeJS
+      runAsUser: true    
+  - name: git-clone
+    description: Clone this repository into C:\Workspaces
+    parameters:
+      repositoryUrl: https://github.com/MaartenCamps79/DevBoxCustomization.git
+      directory: C:\Workspaces
